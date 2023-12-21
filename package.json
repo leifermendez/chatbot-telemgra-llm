@@ -1,0 +1,40 @@
+{
+    "name": "base-meta-memory",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "prestart": "npx eslint . --no-ignore",
+        "pre-copy": "cd .. && npm run  copy.lib base-meta-memory",
+        "start": "node app.js"
+    },
+    "keywords": [],
+    "dependencies": {
+        "@bot-whatsapp/bot": "latest",
+        "@bot-whatsapp/cli": "latest",
+        "@bot-whatsapp/database": "latest",
+        "@bot-whatsapp/provider": "latest",
+        "@pinecone-database/pinecone": "^1.1.2",
+        "@whiskeysockets/baileys": "6.5.0",
+        "axios": "^1.2.1",
+        "body-parser": "^1.20.1",
+        "cache-manager": "5.2.4",
+        "chatgpt": "^5.2.5",
+        "form-data": "4.0.0",
+        "langchain": "^0.0.210",
+        "node-telegram-bot-api": "^0.64.0",
+        "openai": "^4.24.0",
+        "paypal-rest-sdk": "^1.8.1",
+        "polka": "^0.5.2",
+        "queue-promise": "2.2.1",
+        "stripe": "^14.9.0",
+        "wa-sticker-formatter": "4.4.4"
+    },
+    "devDependencies": {
+        "dotenv": "^16.3.1",
+        "eslint": "^8.52.0",
+        "eslint-plugin-bot-whatsapp": "latest"
+    },
+    "author": "",
+    "license": "ISC"
+}
